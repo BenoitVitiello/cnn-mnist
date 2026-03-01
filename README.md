@@ -15,6 +15,7 @@ A Convolutional Neural Network (CNN) built with TensorFlow to classify handwritt
 
 ## Project Structure
 
+```
 cnn-mnist/
 │
 ├── README.md
@@ -37,14 +38,13 @@ cnn-mnist/
 └── outputs/
     ├── models/                # Saved model checkpoints (not tracked by git)
     └── figures/               # Generated plots (not tracked by git)
-
-
+```
 
 ## Model Architecture
 
 The CNN uses two convolutional blocks followed by a fully connected classifier.
 
-
+```
 Input (28x28x1)
     │
     ├── Conv2D(32, 3x3, relu)
@@ -62,6 +62,7 @@ Input (28x28x1)
     ├── Dropout(0.5)
     │
     └── Dense(10, softmax)
+```
 
 
 **Training configuration :**
