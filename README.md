@@ -123,4 +123,4 @@ This will train the model, evaluate it on the test set, and save all outputs to 
 
 ## Dataset
 
-[MNIST](http://yann.lecun.com/exdb/mnist/) — 70,000 grayscale images of handwritten digits (0–9), split into 60,000 training and 10,000 test samples. Each image is 28x28 pixels. The dataset is automatically downloaded by Keras on first run.
+[MNIST](http://yann.lecun.com/exdb/mnist/) : 70,000 grayscale images of handwritten digits (0–9), split into 60,000 training and 10,000 test samples. Each image is 28x28 pixels. The dataset is automatically downloaded by Keras on first run.
