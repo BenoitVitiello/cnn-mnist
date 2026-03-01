@@ -6,7 +6,7 @@ A Convolutional Neural Network (CNN) built with TensorFlow to classify handwritt
 ## Results
  
 - Accuracy ~99.3%
-- Precisio ~99.4%
+- Precision ~99.4%
 - Recall ~99.4%
 - F1 Score ~99.3%
 - AUC ~99.9%
