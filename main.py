@@ -17,7 +17,7 @@ def main():
     print("Model training")
     model, history = train()
 
-    # --- Evaluate ---
+    #Evaluating
     print("Model evaluating")
     evaluate(model)
     plot_training_history(history)

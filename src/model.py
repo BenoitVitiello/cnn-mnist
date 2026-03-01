@@ -8,19 +8,19 @@ from tensorflow.keras import layers, models
 def build_model():
     model = models.Sequential([
 
-        # First convolution
+        #First convolution
         layers.Conv2D(32, (3, 3), activation = "relu", input_shape = (28, 28, 1)),
         layers.BatchNormalization(), #Normalizational layer to stabilize training, allows higher learning rate.
         layers.MaxPooling2D((2, 2)), #Downsamples the feature maps, helps to capture dominant features.
         layers.Dropout(0.25), #Regularization technique to prevent overfitting, randomly sets 25% of the inputs to zero during training.
 
-        # Second convolution
+        #Second convolution
         layers.Conv2D(64, (3, 3), activation = "relu"), #Increases the number of filters to capture more complex features.
         layers.BatchNormalization(),
         layers.MaxPooling2D((2, 2)),
         layers.Dropout(0.25),
 
-        # Classification head
+        #Classification head
         layers.Flatten(), #2D -> 1D
         layers.Dense(128, activation = "relu"),
         layers.Dropout(0.5), #The fully connected layer has more parameters and is more prone to overfitting.
